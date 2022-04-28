@@ -1,0 +1,9 @@
+<h3>Age Sort:</h3>
+<div *ngFor="let el of ageSort; let i = index">
+    <mat-list role="list">
+        <mat-list-item role="listitem"
+            [ngStyle]="{'color': i === 0 ? '#C9B037' : (i === 1 ? '#D7D7D7' : (i === 2 ? '#6A3805' : 'black'))}">
+            Name: {{ el.name }}, Age: {{ el.age }}
+        </mat-list-item>
+    </mat-list>
+</div>

@@ -1,0 +1,13 @@
+<div>
+    <div class="form-view">
+        <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput [(ngModel)]="name">
+        </mat-form-field>
+        <button class="submit-button" mat-raised-button color="primary" (click)="saveName()">Submit</button>
+    </div>
+    <div class="view-container">
+        <app-alphabetical-sort-list [alphabeticalSort]='alphabeticalSortList'></app-alphabetical-sort-list>
+        <app-age-sort-list [ageSort]='ageSortList'></app-age-sort-list>
+    </div>
+</div>
